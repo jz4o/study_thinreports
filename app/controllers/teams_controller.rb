@@ -61,6 +61,18 @@ class TeamsController < ApplicationController
     end
   end
 
+  def download_members
+    @teams = Team.all
+    respond_to do |format|
+      format.pdf do
+        send_data render_to_string,
+                  filename: 'members.pdf',
+                  type: 'application/pdf',
+                  disposition: 'attachment'
+      end
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_team

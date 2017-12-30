@@ -1,0 +1,11 @@
+@teams.each do |team|
+  report.start_new_page do |page|
+    page.item(:team_name).value(team.name)
+
+    team.members.each do |member|
+      page.list(:members_table).add_row do |row|
+        row.values member_code: member.code, member_name: member.name, member_age: member.age
+      end
+    end
+  end
+end
