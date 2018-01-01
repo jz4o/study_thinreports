@@ -18,7 +18,7 @@
 
 1. [学習用ソースの準備](1.学習用ソースの準備.md)
 
-1. thinreportsの導入
+1. [thinreportsの導入](2.thinreportsの導入.md)
 
 1. thinreports-editorの導入
 
