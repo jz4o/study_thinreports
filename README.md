@@ -20,7 +20,7 @@
 
 1. [thinreportsの導入](2.thinreportsの導入.md)
 
-1. thinreports-editorの導入
+1. [thinreports-editorの導入](3.thinreports-editorの導入.md)
 
 1. PDF出力用テンプレートの作成
 
